@@ -3,6 +3,10 @@ body {
     font-family: sans-serif;
 }
 
+select {
+    display: block;
+}
+
 [v-cloak] {
     display: none;
 }
