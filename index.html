@@ -9,21 +9,13 @@
 </head>
 <body>
     <div id="app" v-cloak>
-        <ul>
-            <li v-for="(bird, index) in birds" :key="bird" :class="bird">
-                {{ index + 1 }}. {{ bird }}
-            </li>
-        </ul>
+        <button type="button" class="move" @click="move">Move to Bottom</button>
 
-        <hr>
-
-        <ul>
-            <li v-for="person in people">
-                <div v-for="(value, key, index) in person">
-                    {{ key }}: {{ value }} - Index: {{ index }}
-                </div>
-            </li>
-        </ul>
+        <div class="card" v-for="person in people" :key="person.name"><!-- Try it out without :key -->
+            <h3>{{ person.name }}</h3>
+            <p>{{ person.message }}</p>
+            <input type="text">
+        </div>
     </div>
 
     <script src="js/vue.global.js"></script>

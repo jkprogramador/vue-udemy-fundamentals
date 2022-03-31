@@ -1,22 +1,42 @@
 body {
     font-size: 1.25rem; /* 20px */
+    padding-top: 10px;
+    background-color: #e6ecf1;
     font-family: sans-serif;
 }
 
-.Pigeons {
-    background-color: gray;
+#app {
+    text-align: center;
 }
 
-.Eagles {
-    background-color: red;
+#app button {
+    background-color: #899ff4;
+    border-color: transparent;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-.Doves {
-    background-color: aqua;
+#app .card {
+    width: 400px;
+    margin: 15px auto;
+    padding-bottom: 15px;
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    color: #4a4a4a;
+    display: block;
+    padding: 1.25rem;
 }
 
-.Parrots {
-    background-color: green;
+#app input:focus {
+    outline: 0;
+}
+
+#app input {
+    font-weight: bold;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0;
 }
 
 [v-cloak] {
