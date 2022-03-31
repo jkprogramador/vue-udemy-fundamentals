@@ -3,40 +3,6 @@ body {
     font-family: sans-serif;
 }
 
-label {
-    margin-bottom: 20px;
-    display: block;
-}
-
-select {
-    margin-bottom: 20px;
-}
-
-input[type="text"], input[type="number"] {
-    margin-bottom: 20px;
-    display: block;
-}
-
-.circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    background-color: aquamarine;
-    text-align: center;
-    color: white;
-    line-height: 150px;
-    font-size: 2rem; /* 32px */
-    font-weight: bold;
-}
-
-.purple {
-    background-color: #767dea;
-}
-
-.text-black {
-    color: black;
-}
-
-.text-orange {
-    color: #ffc26f;
+[v-cloak] {
+    display: none;
 }
