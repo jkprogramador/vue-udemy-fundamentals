@@ -11,9 +11,3 @@ const vm = Vue.createApp({
         }
     }
 }).mount('#app');
-
-setTimeout(() => {
-    // proxy setter and getter for data properties
-    // without a proxy: vm.$data.firstName
-    vm.firstName = 'Bob'
-}, 2000)
