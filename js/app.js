@@ -9,10 +9,14 @@ const vm = Vue.createApp({
             age: 20
         }
     },
-    methods: {
+    computed: { // always expected to return a value because that's what is stored in Vue
         fullName() {
+            console.log('Full name computed property called.')
+
             return `${this.firstName} ${this.middleName} ${this.lastName.toUpperCase()}`
-        },
+        }
+    },
+    methods: {
         increment() {
             this.age++
         },
