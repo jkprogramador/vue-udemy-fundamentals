@@ -12,6 +12,7 @@
         <p>{{ fullName() }}</p>
         <p><a :href="url">Dynamic link</a></p>
         <p v-html="rawUrl"></p><!-- Watch out for XSS -->
+        <p>{{ age }}</p>
 
         <hr>
 
@@ -19,7 +20,10 @@
         <input type="text" id="first-name" v-model="firstName">
 
         <label for="last-name">Last name</label>
-        <input type="text" id="last-name" v-model="lastName">
+        <input type="text" id="last-name" :value="lastName" @input="updateLastName">
+
+        <button type="button" @click="increment">Increment age</button>
+        <button type="button" @click="age--">Decrement age</button>
     </div>
 
     <script src="js/vue.global.js"></script>
