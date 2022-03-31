@@ -1,8 +1,12 @@
 body {
-    font-size: 1.375rem;
+    font-size: 1.375rem; /* 22px */
 }
 
 input[type="text"] {
     margin: 10px 0;
     display: block;
+}
+
+[v-cloak] {
+    display: none;
 }
