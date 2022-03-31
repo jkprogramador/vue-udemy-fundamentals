@@ -8,28 +8,20 @@
     <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
-    <div id="app" v-cloak>
-        <p>{{ fullName }}</p>
-        <p><a :href="url">Dynamic link</a></p>
-        <p v-html="rawUrl"></p><!-- Watch out for XSS -->
-        <p>{{ typeof age }}</p>
+    <div id="app">
+        <label for="circle-color">
+            <input id="circle-color" type="checkbox" v-model="isPurple">Purple
+        </label>
 
-        <hr>
+        <select v-model="selectedColor">
+            <option value="">White</option>
+            <option value="text-black">Black</option>
+            <option value="text-orange">Orange</option>
+        </select>
 
-        <label for="first-name">First name</label>
-        <input type="text" id="first-name" v-model.lazy.trim="firstName">
-
-        <label for="middle-name">Middle name</label>
-        <input type="text" id="middle-name" @keyup.enter="updateMiddleName"><!-- Keyboard modifier: On keyup of enter -->
-
-        <label for="last-name">Last name</label>
-        <input type="text" id="last-name" :value="lastName" @input.prevent="updateLastName('Last name event triggered!', $event)">
-
-        <label for="age">Age</label>
-        <input type="number" id="age" v-model.number="age">
-
-        <button type="button" @click="increment">Increment age</button>
-        <button type="button" @click="age--">Decrement age</button>
+        <div class="circle" :class="[selectedColor, circleClasses]">
+            Hi!
+        </div>
     </div>
 
     <script src="js/vue.global.js"></script>
