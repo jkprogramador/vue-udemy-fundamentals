@@ -3,8 +3,20 @@ body {
     font-family: sans-serif;
 }
 
-select {
-    display: block;
+.Pigeons {
+    background-color: gray;
+}
+
+.Eagles {
+    background-color: red;
+}
+
+.Doves {
+    background-color: aqua;
+}
+
+.Parrots {
+    background-color: green;
 }
 
 [v-cloak] {
