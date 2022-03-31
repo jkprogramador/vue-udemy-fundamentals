@@ -10,7 +10,8 @@
 <body>
     <div id="app">
         <p>{{ 2 + 2 }}</p>
-        <p>{{ firstName }} {{ lastName }}</p>
+        <p>{{ `${firstName} ${lastName.toUpperCase()}` }}</p>
+        <p>{{ fullName() }}</p>
     </div>
     <script src="js/vue.global.js"></script>
     <script src="js/app.js"></script>
